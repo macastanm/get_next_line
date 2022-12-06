@@ -17,8 +17,6 @@ char	*ft_read(int fd, char *rest)
 	char	*buffer;
 	int		read_bytes;
 
-	if (ft_strchr(rest, '\n'))
-		return (rest);
 	buffer = ft_calloc((BUFFER_SIZE + 1), sizeof(char));
 	read_bytes = 1;
 	while (!ft_strchr(rest, '\n') && read_bytes > 0)

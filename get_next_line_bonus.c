@@ -101,24 +101,3 @@ char	*get_next_line(int fd)
 	rest[fd] = ft_rest(rest[fd]);
 	return (line);
 }
-
-/*int	main(void)
-{
-	int		fd;
-	int		i;
-	char	*line;
-
-	fd = open("simpsons.txt", O_RDONLY);
-	if (fd == -1)
-		printf("no file found");
-	printf("fd = %d\n", fd);
-	i = 1;
-	while ((line = get_next_line(fd)))
-	{
-		printf("line [%d] is:\n%s", i, line);
-		free(line);
-		i++;
-	}
-	close(fd);
-	return (0);
-}*/
