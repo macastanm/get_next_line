@@ -24,6 +24,7 @@ char	*ft_read(int fd, char *rest)
 		read_bytes = read(fd, buffer, BUFFER_SIZE);
 		if (read_bytes == -1)
 		{
+			free(rest);
 			free(buffer);
 			return (NULL);
 		}
