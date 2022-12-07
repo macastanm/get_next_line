@@ -51,7 +51,7 @@ char	*ft_joinandfree(char *s1, char *s2)
 		s1 = malloc(1 * sizeof(char));
 		s1[0] = '\0';
 	}
-	if (!s2)
+	if (!s1 || !s2)
 		return (NULL);
 	str = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (str == NULL)
